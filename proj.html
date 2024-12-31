@@ -1,0 +1,96 @@
+<html>
+<style>
+.swiper{
+width:100%;
+height:fit-content
+}
+.swiper-slide img{
+width:100%;
+}
+.f{
+background:black;
+color:white; 
+width:100%; 
+height:80; 
+margin-top:20;
+text-align:center;
+}
+.c{
+background:white;
+margin-top:20;
+}
+input[type=button]{
+background:white;
+padding:20px;
+font-family:cambria;
+float:left;
+font-size:large;
+clear:both;
+padding:30px;
+width:20%;
+border-radius:20px;
+}
+input[type=button]:hover{
+background:black;
+color:white;
+cursor:pointer;
+}
+</style>
+<head>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+<link/>
+</head>
+<body>
+<div class="top">
+<h1 style="text-align:center; background:black; color:white; font-family:arial black; padding:30px; margin-top:10;">MEAN GIRLS</h1>
+</div>
+<div class="swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><a href="d.html"><img src="bn1.jpg"></a></div>
+    <div class="swiper-slide"><a href="e.html"><img src="bn2.jpg"></a></div>
+    <div class="swiper-slide"><a href="m.html"><img src="bn3.jpg"></a></div>
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-scrollbar"></div>
+</div>
+<div class="c">
+<a href="j.html"><input type=button value="Jewellery"></a>
+<a href="e.html"><input type=button value="Ethnic"></a>
+<a href="d.html"><input type=button value="Western"></a>
+<a href="m.html"><input type=button value="Beauty Products"></a>
+<a href="f.html"><input type=button value="Footwear"></a>
+<a href="b.html"><input type=button value="Bags"></a>
+</div>
+<a href="d.html"><img src="western.webp" style="width:32%; margin-left:60;"></a>
+<a href="j.html"><img src="jew.webp" style="width:36%; margin-left:50;"></a>
+<a href="b.html"><img src="bags.webp" style="width:32%; margin-left:63; margin-top:20;"></a>
+<a href="m.html"><img src="m.webp" style="width:25%; margin-left:150; margin-top:20;"></a>
+<div class="f">
+<a href="contact.html"class="f">CONTACT US</a>
+<br>
+<pre style="background:black; color:white; font-family:cambria;">We always try to satisfy demands of our customers. 
+There is no worry to shop on our page. 
+Quality assurance=100%. 
+Dispatch in 7 days.</pre>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+</script>
+</body>
+</html>
